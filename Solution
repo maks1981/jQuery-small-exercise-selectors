@@ -1,0 +1,35 @@
+// HTML FILES
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Demo!</title>
+	<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script> 
+	<!-- $('div')[0]; -- console.log on jQuery-->
+</head>
+<body>
+
+<h2>jQuery Demo!</h2>
+
+ <div>Div 1</div>
+ <div class="highlight">Div 2</div>
+ <div id="third">Div 3</div>
+ <div class="highlight">Div 4</div>
+
+ <script type="text/javascript" src="jquerywork.js"></script>
+</body>
+</html>
+
+// jQuery files for the html files
+// select all divs and give them a purple background
+$("div").css("background", "purple");
+
+// select the divs with class "highlight" and make width 200px
+$("div.highlight").css("width", "200px");
+
+// select the div with id "third" and give it a orange border
+$("#third").css("border", "2px solid orange");
+
+// select the first div only and change its font color to pink
+$("div:first-of-type").css("color", "pink");
+
